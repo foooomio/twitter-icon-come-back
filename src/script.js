@@ -9,4 +9,8 @@
         document.body,
         { attributes: true, attributeOldValue: true, attributeFilter: ['class'] }
     );
+    document.head.innerHTML += '<style>'
+        + '.Avatar--circle { border-radius: 3px !important; }'
+        + '.nav .session .dropdown-toggle { border-radius: 4px !important; }'
+        + '</style>';
 })();
