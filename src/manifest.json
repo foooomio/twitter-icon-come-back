@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Twitter Icon Come Back",
+    "version": "1.0.0",
+    "description": "Twitterの丸くなったアイコンを元に戻します",
+    "content_scripts": [{
+        "matches": [
+            "https://twitter.com/*",
+            "https://tweetdeck.twitter.com/"
+        ],
+        "js": ["script.js"],
+        "run_at": "document_end"
+    }]
+}
