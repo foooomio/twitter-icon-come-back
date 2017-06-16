@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name         Twitter Icon Come Back
 // @namespace    https://foooomio.net
+// @match        https://twitter.com
 // @match        https://twitter.com/*
 // @match        https://tweetdeck.twitter.com/
 // @author       foooomio
