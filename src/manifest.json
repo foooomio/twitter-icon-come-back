@@ -8,7 +8,7 @@
             "https://twitter.com/*",
             "https://tweetdeck.twitter.com/"
         ],
-        "js": ["script.js"],
-        "run_at": "document_end"
+        "css": ["style.css"],
+        "run_at": "document_start"
     }]
 }

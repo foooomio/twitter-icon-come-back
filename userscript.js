@@ -5,24 +5,20 @@
 // @match        https://twitter.com/*
 // @match        https://tweetdeck.twitter.com/
 // @author       foooomio
-// @run-at       document-body
+// @run-at       document-start
 // @grant        none
 // @license      MIT License
 // ==/UserScript==
 
 (function() {
-    document.body.className = document.body.className.replace('edge-design');
-    new MutationObserver(function(mutations) {
-        if (mutations.some(function(mutation) {
-            return mutation.oldValue.indexOf('edge-design') !== -1;
-        })) document.body.className = document.body.className.replace('edge-design');
-    }).observe(
-        document.body,
-        { attributes: true, attributeOldValue: true, attributeFilter: ['class'] }
-    );
-    document.head.innerHTML += '<style>'
-        + '.Avatar--circle { border-radius: 3px !important; }'
-        + '.nav .session .dropdown-toggle { border-radius: 4px !important; }'
-        + '.avatar { border-radius: 10% !important; }'
-        + '</style>';
+    const style = `
+.Avatar--circle { border-radius: 3px !important; }
+.dropdown-toggle { border-radius: 4px !important; }
+.Avatar { border-radius: 4px !important; }
+.avatar { border-radius: 10% !important; }
+.DashboardProfileCard-avatarImage { border-radius: 10% !important; }
+.ProfileAvatar { border-radius: 10% !important; }
+.ProfileAvatar-image { border-radius: 10% !important; }
+`;
+    document.head.innerHTML += '<style>' + style + '</style>';
 })();
