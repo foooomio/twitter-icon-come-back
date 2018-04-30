@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Twitter Icon Come Back",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Twitterの丸くなったアイコンを元に戻します",
     "content_scripts": [{
         "matches": [
