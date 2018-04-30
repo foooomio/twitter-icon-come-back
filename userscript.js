@@ -4,6 +4,7 @@
 // @match        https://twitter.com
 // @match        https://twitter.com/*
 // @match        https://tweetdeck.twitter.com/
+// @exclude      https://twitter.com/i/cards/*
 // @author       foooomio
 // @run-at       document-start
 // @grant        none
