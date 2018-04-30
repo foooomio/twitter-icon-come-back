@@ -19,6 +19,7 @@
 .DashboardProfileCard-avatarImage { border-radius: 10% !important; }
 .ProfileAvatar { border-radius: 10% !important; }
 .ProfileAvatar-image { border-radius: 10% !important; }
+.ProfileCard-avatarImage { border-radius: 10% !important; }
 `;
     document.head.innerHTML += '<style>' + style + '</style>';
 })();
